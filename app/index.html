@@ -5,12 +5,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adrian Williams Resume</title>
-fffffffffff
+
     <!-- Google Font Roboto -->
     <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
     <!-- RobotoEnd-->
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -18,7 +21,9 @@ fffffffffff
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <link rel='stylesheet' href='/bower_components/materialize/bin/materialize.css' />
+    <link rel='stylesheet' href='/bower_components/fullpage.js/dist/jquery.fullpage.css' />
+    <link rel='stylesheet' href='/bower_components/animate.css/animate.css' />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -31,57 +36,705 @@ fffffffffff
     <!-- endbuild -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Tech Skills Slider -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+
+
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<header class="header light-green z-depth-2">
-  <img src="images/team-placeholder.jpg" alt class="circle responsive-img">
-  <h4 class="white-text">Adrian Williams </h4>
-  <nav class="center-align light-green z-depth-0">
-    <div class="brand-logo center">
-      <ul>
-        <li><a href="/page1">ABOUT ME</a></li>
-        <li><a href="/page2">PORTFOLIO</a></li>
-        <li><a href="/page1">RESUME</a></li>
-        <li><a href="/page2">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<br>
-<br>
 
-<!-- About Me -->
-<div class="container">
-  <div class="row center">
-    <div class="col s12">
-      <h5 class="header indigo-text section-title">
-        <span>
-          Who Am I
-        </span>
-      </h5>
-      <div class="container">
-        <div class="divider"></div>
+    <!-- Navbar -->
+    <div id="content">
+      <nav>
+        <div class="nav-wrapper red darken-4">
+          <a href="#!" class="brand-logo"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#index">Me</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfoilio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Top</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Fullscreen image -->
+    <div class="slider fullscreen">
+     <ul class="slides">
+       <li>
+         <img src="images/hero_44.jpg"> <!-- random image -->
+         <div class="caption center-align">
+           <br>
+           <h3 class="amber-text">Hi, I'm Adrian Williams</h3>
+           <h5 class="light grey-text text-lighten-3 amber-text">Jr. Web developer</h5>
+           <a class="waves-effect waves-light btn red darken-4" href="#index">Get To Know Me</a>
+         </div>
+       </li>
+       <li>
+         <img src="images/hero_22.jpg"> <!-- random image -->
+         <div class="caption center-align">
+           <br>
+           <h3 class="amber-text">Hi, I'm Adrian Williams</h3>
+           <h5 class="light grey-text text-lighten-3 amber-text">Jr. Web developer</h5>
+           <a class="waves-effect waves-light btn red darken-4 " href="#index">Get To Know Me</a>
+         </div>
+       </li>
+       <li>
+         <img src="images/hero_33.jpg"> <!-- random image -->
+         <div class="caption center-align">
+           <br>
+           <h3 class="amber-text">Hi, I'm Adrian Williams</h3>
+           <h5 class="light grey-text text-lighten-3 amber-text">Jr. Web developer</h5>
+           <a class="waves-effect waves-light btn red darken-4" href="#index">Get To Know Me</a>
+         </div>
+       </li>
+       <li>
+         <img src="images/hero_44.jpg"> <!-- random image -->
+         <div class="caption center-align">
+           <br>
+           <h3 class="amber-text">Hi, I'm Adrian Williams</h3>
+           <h5 class="light grey-text text-lighten-3 amber-text">Jr. Web developer</h5>
+           <a class="waves-effect waves-light btn red darken-4" href="#index">Get To Know Me</a>
+         </div>
+       </li>
+     </ul>
+   </div>
+
+   <!-- Div under Navbar and fullscreen hero image introduction -->
+   <div id="content">
+       <div class="contianer">
+         <div class="header red darken-4 center-align">
+           <div id="index" class="section scrollspy"></div>
+           <img src="images/me.png" alt class="circle responsive-img" height="250px" width="250px">
+           <h1 class="center-align white-text"> Adrian Williams </h1>
+           <h4 class="center-align white-text"> Jr. Developer - Photographer - Graphic Designer </h4>
+           <a class="waves-effect waves-light amber center-align btn" href="Adrian Williams Resume 2017.pdf"download>Download Resume</a>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+         </div>
+     </div>
+   </div>
+
+   <!-- What I'm doing -->
+   <div id="content">
+     <div id="about" class="section scrollspy"></div>
+   <div class="container">
+     <div class="row">
+       <div class="me">
+       <div class="col s12">
+         <h4 class="center-align gray-text"> Who Am I </h4>
+         <p class="center-align"> Hello World! I am a Jr. Web Developer
+           from out of the Orlando, Fl area. My aspiration is to become associated with a company where I
+           can harness my skills and gain further experience while enhancing the company’s productivity
+           and prestige. Apart from freelancing, I enjoy spending my free time dabbling in photography,
+           playing basketball, playing video games, and finding the best food spots around the orlando area.
+         </p>
+
+    <!-- Card for Skills -->
+         <div class="col s12 m3">
+          <div class="card-panel hoverable white">
+            <div class="center-align">
+              <img src="images/heart.png" height="70px" width="70px">
+            </div>
+            <h5 class="gray-text center-align">UI/UX Design</h5>
+          </div>
+        </div>
+        <div class="col s12 m3">
+         <div class="card-panel hoverable white">
+           <div class="center-align">
+             <img src="images/braces.png" height="70px" width="70px">
+           </div>
+           <h5 class="gray-text center-align">Development</h5>
+         </div>
+       </div>
+       <div class="col s12 m3">
+         <div class="card-panel hoverable white">
+           <div class="center-align">
+             <img src="images/camera.png" height="70px" width="70px">
+           </div>
+           <h5 class="gray-text center-align">Photography</h5>
+         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, c
-          onsectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor
-          incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor
-      </p>
+      <div class="col s12 m3">
+        <div class="card-panel hoverable white">
+          <div class="center-align">
+            <img src="images/games.png" height="70px" width="70px">
+          </div>
+          <h5 class="gray-text center-align">Gaming</h5>
+        </div>
+     </div>
+     <!-- Card ends -->
+       </div>
+      </div>
+      </div>
+     </div>
     </div>
-  </div>
-</div>
-<div>
-<!--About Me End-->
+    <!-- End of cards -->
+    <br>
 
+    <!-- Skills -->
+    <div id="content">
+      <div id="skills" class="section scrollspy"></div>
+      <div class="red darken-4">
+        <br>
+        <div class="container">
+          <div class="row">
+            <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
+            <h4 class="center-align white-text">HTML</h4>
+            <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
+            <svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
+            <svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
+            <svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
+            <svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <!-- Skills End -->
+
+    <!-- Div Timeline -->
+    <div id="content">
+        <div class="contianer">
+            <div class="timeline-wrap grey lighten-5">
+               <ul class="timeline timeline--first">
+                 <div id="experience" class="section scrollspy"></div>
+                  <li class="era">
+                     <h2 class="era__title">Experience</h2>
+                  </li>
+                  <li class="entry entry--left">
+                     <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2>Sherwin-Williams, Sales Representative</h2>
+                        <p>May 2015 - Present</p>
+                        <p>Ensuring customer satisfaction and building positive
+                          long-term relationships with them. Keeping servicing
+                          stores aware of call activity, customer issues and
+                          sales/service opportunities. Keeping sales floor immaculate
+                          at all times.
+                        </p>
+                     </div>
+                  </li>
+                  <li class="entry entry--right">
+                     <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2>Freelance Web Developer</h2>
+                        <p>Aug 2015 - Present</p>
+                        <p>Professional individual who undertakes various kinds
+                          of web projects and does the work of designing, implementing,
+                          and improving the websites and web applications.
+                        </p>
+                     </div>
+                  </li>
+                  <li class="entry entry--left">
+                     <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2>Jr. Web Developer - Florida High School Hoops</h2>
+                        <p>Sep 2014 - June 2016</p>
+                        <p>Occupation required moniotring WordPress site while also
+                          being responsible for gatherithing information needed to
+                          to do so.
+                           </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- D3 Timeline End -->
+
+    <!-- Portofilio -->
+    <div id="content">
+        <div class="contianer">
+          <div class="header center-align">
+             <h3 class="center-align"> Portfolio </h3>
+             <div id="portfolio" class="section scrollspy"></div>
+             <ul id="tabs-swipe-demo" class="tabs">
+              <li class="tab col s3"><a href="#test-swipe-1">Web Design</a></li>
+              <li class="tab col s3"><a class="active" href="#test-swipe-2">Photography</a></li>
+              <li class="tab col s3"><a href="#test-swipe-3">Graphic Design</a></li>
+              </ul>
+              <div id="test-swipe-1" class="col s12 white">
+                <div class="container">
+                  <div class="row">
+                    <!-- Card One -->
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/ph.jpg" height="200px" width="200px">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card Two -->
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/ph.jpg" height="200px" width="200px">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Three -->
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/ph.jpg" height="200px" width="200px">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Four -->
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/ph.jpg" height="200px" width="200px">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Five -->
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/ph.jpg" height="200px" width="200px">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Six -->
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/ph.jpg" height="200px" width="200px">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test-swipe-2" class="col s12 white">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/1.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/2.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/3.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/4.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/5.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/6.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="test-swipe-3" class="col s12 white">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/1.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/2.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/3.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/4.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/5.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l4 m8 offset-m2 s12">
+                      <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/img/6.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Interior Remodel<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">See more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Interior Remodel<i class="material-icons right">close</i></span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+   <!-- Parallax -->
+   <div id="content">
+     <div class="parallax-container">
+         <div class="parallax"><img src="images/fog.jpg"></div>
+     </div>
+   </div>
+   <!-- Contact Form -->
+   <div id="content">
+     <div class="grey lighten-5">
+       <div id="contact" class="section scrollspy"></div>
+     <div class="container">
+       <div class="row">
+         <div class="social">
+         <form class="col s12">
+           <div class="row">
+             <div class="input-field col s6">
+               <input placeholder="First name" id="first_name" type="text" class="validate">
+               <label for="first_name">First Name</label>
+             </div>
+             <div class="input-field col s6">
+               <input placeholder="Last name" id="last_name" type="text" class="validate">
+               <label for="last_name">Last Name</label>
+             </div>
+             <div class="input-field col s6">
+               <input placeholder="Phone number" id="phone_number" type="text" class="validate">
+               <label for="phone_number">Last Name</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12">
+             <textarea id="textarea1" class="materialize-textarea"></textarea>
+             <label for="textarea1">Textarea</label>
+             </div>
+          </div>
+          <a class="waves-effect waves-light btn">Submit</a>
+         </form>
+       </div>
+       </div>
+       <br>
+     </div>
+    </div>
+   </div>
+
+   <!--  Google map-->
+   <div id="content">
+    <div class="grey lighten-5">
+       <div class="row">
+
+       </div>
+       <br>
+    </div>
+   </div>
+
+   <!-- Footer Here -->
+   <div id="content">
+         <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="social">
+              <div class="col s12 m2">
+                 <a href="https://facebook.com"><img src="images/Social Media Icons/PNG/Square Black White/Facebook.png"></a>
+              </div>
+              <div class="col s12 m2">
+                <a href="https://github.com/a-will-i-am.com"><img src="images/Social Media Icons/PNG/Square Black White/Github.png"</a>
+              </div>
+              <div class="col s12 m2">
+                 <a href="https://www.instagram.com/"><img src="images/Social Media Icons/PNG/Square Black White/Instagram.png"</a>
+              </div>
+              <div class="col s12 m2">
+                  <a href="https://www.snapchat.com/download"><img src="images/Social Media Icons/PNG/Square Black White/Snapchat.png"</a>
+              </div>
+              <div class="col s12 m2">
+                   <a href="https://www.linkedin.com"><img src="images/Social Media Icons/PNG/Square Black White/Linkedin.png"</a>
+              </div>
+              <div class="col s12 m2">
+                   <a href="https://www.twitter.com"><img src="images/Social Media Icons/PNG/Square Black White/Twitter.png"</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              <div class="center-align">
+            © 2017 Copyright Adrian Williams
+              </div>
+            </div>
+          </div>
+        </footer>
+   </div>
+   <!--Footer Ends Here -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -98,11 +751,93 @@ fffffffffff
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="scripts/animate.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="scripts/liquidFillGauge.js" language="JavaScript"></script>
+    <script language="JavaScript">
+    var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+    var config1 = liquidFillGaugeDefaultSettings();
+    config1.circleColor = "#FF7777";
+    config1.textColor = "#FF4444";
+    config1.waveTextColor = "#FFAAAA";
+    config1.waveColor = "#FFDDDD";
+    config1.circleThickness = 0.2;
+    config1.textVertPosition = 0.2;
+    config1.waveAnimateTime = 1000;
+    var gauge2= loadLiquidFillGauge("fillgauge2", 28);
+    var config2 = liquidFillGaugeDefaultSettings();
+    config2.circleColor = "#D4AB6A";
+    config2.textColor = "#553300";
+    config2.waveTextColor = "#805615";
+    config2.waveColor = "#AA7D39";
+    config2.circleThickness = 0.1;
+    config2.circleFillGap = 0.2;
+    config2.textVertPosition = 0.8;
+    config2.waveAnimateTime = 2000;
+    config2.waveHeight = 0.3;
+    config2.waveCount = 1;
+    var gauge3 = loadLiquidFillGauge("fillgauge3", 60);
+    var config3 = liquidFillGaugeDefaultSettings();
+    config3.textVertPosition = 0.8;
+    config3.waveAnimateTime = 5000;
+    config3.waveHeight = 0.15;
+    config3.waveAnimate = false;
+    config3.waveOffset = 0.25;
+    config3.valueCountUp = false;
+    config3.displayPercent = false;
+    var gauge4 = loadLiquidFillGauge("fillgauge4", 50);
+    var config4 = liquidFillGaugeDefaultSettings();
+    config4.circleThickness = 0.15;
+    config4.circleColor = "#808015";
+    config4.textColor = "#555500";
+    config4.waveTextColor = "#FFFFAA";
+    config4.waveColor = "#AAAA39";
+    config4.textVertPosition = 0.8;
+    config4.waveAnimateTime = 1000;
+    config4.waveHeight = 0.05;
+    config4.waveAnimate = true;
+    config4.waveRise = false;
+    config4.waveHeightScaling = false;
+    config4.waveOffset = 0.25;
+    config4.textSize = 0.75;
+    config4.waveCount = 3;
+    var gauge5 = loadLiquidFillGauge("fillgauge5", 60);
+    var config5 = liquidFillGaugeDefaultSettings();
+    config5.circleThickness = 0.4;
+    config5.circleColor = "#6DA398";
+    config5.textColor = "#0E5144";
+    config5.waveTextColor = "#6DA398";
+    config5.waveColor = "#246D5F";
+    config5.textVertPosition = 0.52;
+    config5.waveAnimateTime = 5000;
+    config5.waveHeight = 0;
+    config5.waveAnimate = false;
+    config5.waveCount = 2;
+    config5.waveOffset = 0.25;
+    config5.textSize = 1.2;
+    config5.minValue = 30;
+    config5.maxValue = 150
+    config5.displayPercent = false;
+    var gauge6 = loadLiquidFillGauge("fillgauge6", 120);
+
+    function NewValue(){
+        if(Math.random() > .5){
+            return Math.round(Math.random()*100);
+        } else {
+            return (Math.random()*100).toFixed(1);
+        }
+    }
+    </script>
     <!-- endbuild -->
+
+
   </body>
 </html>
