@@ -21,9 +21,9 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css' />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.min.css' />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' />
+    <link rel='stylesheet' href='/bower_components/materialize/bin/materialize.css' />
+    <link rel='stylesheet' href='/bower_components/fullpage.js/dist/jquery.fullpage.css' />
+    <link rel='stylesheet' href='/bower_components/animate.css/animate.css' />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -197,13 +197,16 @@
       <div id="skills" class="section scrollspy"></div>
       <div class="red darken-4">
         <br>
-        <div class="container">
+        <h1 class="white-text center-align"> How good am I </h1>
+        <h4 class="center-align amber-text"> HTML - CSS - PHP - AJAX - MYSQL</h4>
+        <div class="col s12">
           <div class="row">
             <svg id="fillgauge1" width="19%" height="200" onclick="gauge1.update(NewValue());"></svg>
             <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
             <svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
             <svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
             <svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
+          </div>
           </div>
         </div>
         <br>
@@ -764,11 +767,11 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.1/d3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.3/jquery.fullpage.min.css"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -779,7 +782,7 @@
     <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
     <script src="scripts/liquidFillGauge.js" language="JavaScript"></script>
     <script language="JavaScript">
-    var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+    var gauge1 = loadLiquidFillGauge("fillgauge1", 90);
     var config1 = liquidFillGaugeDefaultSettings();
     config1.circleColor = "#FF7777";
     config1.textColor = "#FF4444";
@@ -788,7 +791,7 @@
     config1.circleThickness = 0.2;
     config1.textVertPosition = 0.2;
     config1.waveAnimateTime = 1000;
-    var gauge2= loadLiquidFillGauge("fillgauge2", 28);
+    var gauge2= loadLiquidFillGauge("fillgauge2", 70);
     var config2 = liquidFillGaugeDefaultSettings();
     config2.circleColor = "#D4AB6A";
     config2.textColor = "#553300";
@@ -809,7 +812,7 @@
     config3.waveOffset = 0.25;
     config3.valueCountUp = false;
     config3.displayPercent = false;
-    var gauge4 = loadLiquidFillGauge("fillgauge4", 50);
+    var gauge4 = loadLiquidFillGauge("fillgauge4", 45);
     var config4 = liquidFillGaugeDefaultSettings();
     config4.circleThickness = 0.15;
     config4.circleColor = "#808015";
@@ -825,7 +828,7 @@
     config4.waveOffset = 0.25;
     config4.textSize = 0.75;
     config4.waveCount = 3;
-    var gauge5 = loadLiquidFillGauge("fillgauge5", 60);
+    var gauge5 = loadLiquidFillGauge("fillgauge5", 53);
     var config5 = liquidFillGaugeDefaultSettings();
     config5.circleThickness = 0.4;
     config5.circleColor = "#6DA398";
