@@ -31,14 +31,15 @@ position: relative;
 top : 100vh;
 }
 
-.header{
-  padding-top: 50px;
 
+.section {
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
 .row {
-  margin-bottom:
+  margin-bottom: 0;
 }
-
 /* Me */
 .me {
   padding-top: 30px;
